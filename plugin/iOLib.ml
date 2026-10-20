@@ -336,6 +336,7 @@ let run ~plugin_name ~opaque_access ~name term =
   if chatty () then Feedback.msg_info (Pp.str ("Running " ^ name ^ " ..."));
   let env = Global.env () in
   let evd = Evd.from_env env in
-  let (term,_) = interp_constr env evd term in
+  let (term,uctx) = interp_constr env evd term in
+  let evd = Evd.from_ctx uctx in
   define_and_run ~plugin_name ~opaque_access env evd term
   (* TODO: clean leftover files *)
