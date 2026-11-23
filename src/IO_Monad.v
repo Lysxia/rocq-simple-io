@@ -8,7 +8,7 @@ From Stdlib Require Import
 From ExtLib.Structures Require Import
      Functor Applicative Monad MonadFix.
 
-Set Warnings "-extraction-opaque-accessed,-extraction".
+Set Warnings "-extraction-opaque-accessed,-extraction,-notation-for-abbreviation".
 (* end hide *)
 
 (** * Main interface *)
