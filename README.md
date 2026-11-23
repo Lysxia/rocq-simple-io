@@ -1,6 +1,6 @@
 # Purely functional IO for Rocq
 
-[![CircleCI](https://dl.circleci.com/status-badge/img/gh/Lysxia/rocq-simple-io/tree/master.svg?style=svg)](https://dl.circleci.com/status-badge/redirect/gh/Lysxia/rocq-simple-io/tree/master)
+[![Docker CI](https://github.com/Lysxia/rocq-simple-io/actions/workflows/docker-action.yml/badge.svg)](https://github.com/Lysxia/rocq-simple-io/actions/workflows/docker-action.yml)
 
 ## Hello World in Rocq
 
