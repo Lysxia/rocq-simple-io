@@ -17,7 +17,7 @@ license: "MIT"
 homepage: "https://github.com/Lysxia/rocq-simple-io"
 bug-reports: "https://github.com/Lysxia/rocq-simple-io/issues"
 depends: [
-  "dune" {>= "3.21"}
+  "dune" {>= "3.23"}
   "ocaml" {>= "4.08.0"}
   "ocamlfind"
   "rocq-prover" {< "9.3"}
