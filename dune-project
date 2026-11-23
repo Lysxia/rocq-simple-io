@@ -1,4 +1,4 @@
-(lang dune 3.21)
+(lang dune 3.23)
 (using rocq 0.11)
 (using menhir 2.0)
 (name rocq-simple-io)

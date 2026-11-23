@@ -27,6 +27,11 @@ jobs:
         with:
           opam_file: 'rocq-simple-io.opam'
           custom_image: ${{ matrix.image }}
+          before_install: |
+            startGroup "Print opam config"
+              opam unpin dune
+              opam config list; opam repo list; opam list
+            endGroup
           after_script: |
             startGroup "Test dependants"
               PINS=$(opam list -s --pinned --columns=package | xargs | tr ' ' ,)
