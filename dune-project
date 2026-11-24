@@ -26,7 +26,8 @@ define their own APIs on top of this IO type.")
  (depends
    (ocaml (>= 4.08.0))
    ocamlfind
-   (rocq-prover (< 9.3))
+   rocq-prover
+   (rocq-core (or (< 9.4) (= dev)))
    (coq-ext-lib (>= 0.10.0))
    (ocamlbuild (and :with-test (>= 0.9.0)))
    (cppo (and :build (>= 1.6.8))))
