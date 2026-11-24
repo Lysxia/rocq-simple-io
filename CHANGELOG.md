@@ -1,5 +1,11 @@
 # Changelog for rocq-simple-io
 
+## 1.12.0
+
+- Rename to `rocq-simple-io`
+- Compatibility with Rocq 9.0-9.3
+- Drop compatibility with Coq
+
 ## 1.11.0
 
 - Add option `RunIO IOMode Forward` to forward stdin and stdout of the extracted executable to
