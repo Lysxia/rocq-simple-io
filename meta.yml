@@ -1,5 +1,6 @@
 fullname: Simple IO
 shortname: simple-io
+opam_name: rocq-simple-io
 action: true
 ci_test_dependants:
   enabled: true
@@ -7,4 +8,7 @@ ci_test_dependants:
 dune: true
 tested_rocq_opam_versions:
 - version: '9.0'
+- version: '9.1'
+- version: '9.2'
+- version: '9.3'
 - version: 'dev'
