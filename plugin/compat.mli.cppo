@@ -8,6 +8,8 @@ val univ_poly : bool -> PolyFlags.t
 val univ_poly : bool -> bool
 #endif
 
+val from_ustate : UState.t -> Evd.evar_map
+
 module SummaryRef :
 sig
   type 'a t

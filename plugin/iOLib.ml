@@ -337,6 +337,6 @@ let run ~plugin_name ~opaque_access ~name term =
   let env = Global.env () in
   let evd = Evd.from_env env in
   let (term,uctx) = interp_constr env evd term in
-  let evd = Evd.from_ctx uctx in
+  let evd = from_ustate uctx in
   define_and_run ~plugin_name ~opaque_access env evd term
   (* TODO: clean leftover files *)

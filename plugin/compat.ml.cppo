@@ -32,6 +32,12 @@ let univ_poly = PolyFlags.of_univ_poly
 let univ_poly b = b
 #endif
 
+#if ROCQ_VERSION >= (9,3,0)
+let from_ustate = Evd.from_ustate
+#else
+let from_ustate = Evd.from_ctx
+#endif
+
 #if ROCQ_VERSION >= (9,4,0)
 module SummaryRef =
 struct
